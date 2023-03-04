@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--=============== Boxicon ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Edie Homepage</title>
+  <script defer src="main.bundle.js"></script></head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header" id="header">
+      <nav class="nav">
+        <div class="nav__logo logo">
+          <a href="#">Edie</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home-alt"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="#services" class="nav__link">
+                <i class="bx bx-briefcase-alt"></i>
+                Services
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="#works" class="nav__link">
+                <i class="bx bx-box"></i>
+                Our Works
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="#clients" class="nav__link">
+                <i class="bx bx-user"></i>
+                Clients
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-send"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== Main ===============-->
+    <main class="main" id="main">
+      <!--============ Home ============-->
+      <section class="home" id="home">
+        <div class="home__content">
+          <p>Unhappy with your website?</p>
+          <h1 class="section__title">
+            We create beautiful and fast web services
+          </h1>
+        </div>
+        <img src="./assets/images/heroImage.jpg" alt="hero image" />
+      </section>
+
+      <!--============ Contact ============-->
+      <section class="contact" id="contact">
+        <h2 class="section__title">Story, emotion and purpose</h2>
+        <p>
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <form action="#" class="form">
+          <label for="email">Want us to contact you?</label>
+          <div class="custom__input">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="submit" value="Join" />
+          </div>
+        </form>
+      </section>
+
+      <!--============ Services ============-->
+      <section class="services" id="services">
+        <h2 class="section__title">We offer high demand services</h2>
+
+        <ul class="services__list">
+          <li class="service">
+            <span class="service__icon blue">
+              <i class="bx bxs-pencil"></i>
+            </span>
+            <h3 class="service__title">UI/UX Design</h3>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn">Get started</a>
+          </li>
+
+          <li class="service">
+            <span class="service__icon green">
+              <i class="bx bx-code"></i>
+            </span>
+            <h3 class="service__title">Front End</h3>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn">Get started</a>
+          </li>
+
+          <li class="service">
+            <span class="service__icon red">
+              <i class="bx bxs-server"></i>
+            </span>
+            <h3 class="service__title">Back End</h3>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn">Get started</a>
+          </li>
+        </ul>
+      </section>
+
+      <!--============ Our Works ============-->
+      <section class="works" id="works">
+        <h2 class="section__title">Good design means good business</h2>
+
+        <ul class="works__list">
+          <li class="work">
+            <img src="./assets/images/smarthome.jpg" alt="screenshot" />
+            <p class="work__type">Full stack application</p>
+            <h4 class="work__title">Smart home dashboard</h4>
+          </li>
+
+          <li class="work">
+            <img src="./assets/images/onboard.png" alt="screenshot" />
+            <p class="work__type">UX/UI design</p>
+            <h4 class="work__title">Onboard application</h4>
+          </li>
+
+          <li class="work">
+            <img src="./assets/images/booking.png" alt="screenshot" />
+            <p class="work__type">Mobile application</p>
+            <h4 class="work__title">Booking system</h4>
+          </li>
+
+          <li class="work">
+            <img src="./assets/images/juice-product.png" alt="screenshot" />
+            <p class="work__type">Front End applicati on</p>
+            <h4 class="work__title">Juice product homepage</h4>
+          </li>
+        </ul>
+
+        <a href="#" class="works__link">
+          see more<i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </section>
+
+      <!--============ Clients ============-->
+      <section class="clients" id="clients">
+        <div class="team">
+          <div class="team__intro">
+            <span>Meet the team</span>
+            <h2 class="section__title">We are chilled and a laidback team</h2>
+            <p class="clients__intro">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+
+          <div class="team__pictures">
+            <img
+              src="./assets/images/person1.png"
+              alt="person"
+              class="pic__one"
+            />
+            <img
+              src="./assets/images/person2.png"
+              alt="person"
+              class="pic__two"
+            />
+            <img
+              src="./assets/images/person3.png"
+              alt="person"
+              class="pic__three"
+            />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial__content">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </p>
+
+          <div class="testimonial__infos">
+            <img src="./assets/images/person4.png" alt="person" />
+            <div class="infos__details">
+              <h4>Carlos Tran</h4>
+              <p>The Decorate Gatsby</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== Footer ===============-->
+    <footer class="footer" id="footer">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Our Works</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer__links">
+          <div class="logo">
+            <a href="#">Edie</a>
+          </div>
+
+          <ul class="links__list">
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxl-linkedin-square"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form action="#" class="form">
+          <label for="email">Want us to contact you?</label>
+          <div class="custom__input">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="submit" value="Join" />
+          </div>
+        </form>
+      </nav>
+      <p>
+        created by douako-j -
+        <a href="https://devchallenges.io/">devChallenges.io</a>
+      </p>
+    </footer>
+  </body>
+</html>
