@@ -7,7 +7,7 @@
 
 /* Landscape phone to portrait tablet */
 @mixin sm {
-  @media (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     @content;
   }
 }
@@ -23,5 +23,23 @@
 @mixin xl {
   @media (min-width: 980px) {
     @content;
+  }
+}
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == sm) {
+      @include sm {
+        @content;
+      }
+    } @else if ($key == md) {
+      @include md {
+        @content;
+      }
+    } @else if ($key == xl) {
+      @include xl {
+        @content;
+      }
+    }
   }
 }

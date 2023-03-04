@@ -8,6 +8,11 @@
   font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: 500;
+
+  @include media(md, xl) {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
 }
 
 /*=============== Logo ===============*/
@@ -16,11 +21,16 @@
   line-height: 3.5rem;
   font-weight: 800;
   font-family: var(--heebo-font);
+
+  @include md {
+    font-size: 3.6rem;
+    line-height: 5.3rem;
+  }
 }
 
 /*=============== Form ===============*/
 .form {
-  width: 100%;
+  width: 29.2rem;
 
   label {
     font-size: 1rem;
@@ -56,5 +66,9 @@
       line-height: 2.1rem;
       cursor: pointer;
     }
+  }
+
+  @include xl {
+    width: 35rem;
   }
 }
