@@ -661,4 +661,9 @@ footer {
   @include media(md, xl) {
     margin-bottom: 0;
   }
+
+  @include xl {
+    padding-left: 16.8rem;
+    padding-right: 13.7rem;
+  }
 }
